@@ -1,0 +1,217 @@
+@media screen and (max-width: 600px) {
+
+    #toDo {
+        width: 100%;
+    }
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poopins', sans-serif;
+}
+
+body {
+    /* background-color: rgb(0, 204, 191);
+    background-image: linear-gradient(139deg, rgb(0, 204, 191) 0%, rgb(54, 204, 0) 100%); */
+    
+    background-image: url(https://lh3.googleusercontent.com/proxy/-YU6c86dy1Z53sO9pDfm42QzjeRF8RiOHRnKPUnEkbCfeb3fECg_iByWvzisLxZBmPX2GPgjCDBWJTjRUzuid45FKUtSAF9kxbjwp1b1Ba9Zi2_u_6JO2dQQa_60PGW886bp1Gi8ncIlCKCymw=s0-d);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    overflow-x: hidden;
+    height: 100%;
+    font-family: 'Poopins', sans-serif;
+    font-weight: bolder;
+  direction: ltr;
+}
+
+.toDoo {
+    padding: 20px;
+    color: white;
+    width: 700px;
+    margin: 0 auto;
+    height: auto;
+    margin-right: 100px;
+
+}
+
+#toDo>.header {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.h1 {
+    display: inline-block;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-family: 'Quintessential', cursive;
+    
+}
+
+.TodoInput-container {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    margin-bottom: 50px;
+
+
+}
+
+.todo-input1,
+.todo-input2,
+.todo-input3 {
+    padding: 0 0 0 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+}
+
+.addSave{
+    width: 60px;
+    height: 40px;
+    margin-top: 20px;
+    background-color: rgb(54, 204, 0);
+    line-height: 40px;
+    color: white;
+    cursor: pointer;
+}
+.refresh2{
+    width: 60px;
+    height: 40px;
+    margin-top: 20px;
+    background-color: rgb(54, 204, 0);
+    line-height: 40px;
+    color: white;
+    cursor: pointer;
+
+}
+
+
+#toDo>.todo-List-container {
+    list-style: none;
+    margin: 10px 0 0;
+}
+
+#toDo>.todo-List-container .todo-list {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+#toDo>.todo-List-container .todo-list .todo-item {
+    width: 100%;
+    background-color: white;
+    color: black;
+    height: 40px;
+    padding: 0 10px;
+    padding-top: 15px;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Grape Nuts', cursive;
+    font-family: 'Macondo', cursive;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+font-weight: bolder;
+
+
+}
+
+#toDo>.todo-List-container .todo-list .button {
+    position: absolute;
+    right: 0;
+}
+
+#toDo>.todo-List-container .todo-list .button button {
+    width: 45px;
+    height: 50px;
+    border: none;
+    color: white;
+    outline: none;
+    cursor: pointer;
+}
+
+#toDo>.todo-List-container .todo-list .button .completed {
+    background-color: lime;
+    margin-right: -5px;
+}
+
+#toDo>.todo-List-container .todo-list .button .editBtn {
+    background-color: purple;
+}
+
+#toDo>.todo-List-container .todo-list .button .trash {
+    background-color: red;
+    margin-left: -5px;
+}
+
+#toDo>.todo-List-container .todo-list .button button i {
+    pointer-events: none;
+
+}
+
+.line {
+    text-decoration: line-through;
+    opacity: 0.7;
+    transition: .3s;
+}
+
+.removing {
+    opacity: 0 !important;
+    transform: translateY(30px);
+    transition: .8s;
+}
+
+hr {
+    width: 100%;
+    size: "3";
+    animation-name: task;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+
+}
+
+
+h5 {
+    padding-top: 10px;
+    animation-name: task;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    margin-left: 300px;
+    font-size: 18px;
+
+}
+
+@keyframes task {
+    0% {
+        margin-left: 5px;
+        color: red;
+        background-color: grey;
+    }
+
+    20% {
+        right: 10px;
+        color: blue;
+    }
+
+    50% {
+        margin-left: 20px;
+        color: yellow;
+        background-color: black;
+    }
+
+}
+
+.fa-refresh :hover {
+    color: black;
+}
